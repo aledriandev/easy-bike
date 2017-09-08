@@ -10,10 +10,22 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 </head>
 <body>
-
+	<section>
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<button id="encuentrame">Encuéntrame</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-sm-12" id="map">
+				<!--Aqui ira nuestro mapa-->
+			</div>
+		</div>
+	</section>
 	
 
-
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtZWqV3NerUDwWsqoPz6P-RO7DJ-Dsj58&callback=initMap&libraries=places"
+   ></script>
 	<script src="js/main.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>

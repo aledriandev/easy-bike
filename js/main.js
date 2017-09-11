@@ -1,3 +1,4 @@
+/*
 function initMap(){
 	var map = new google.maps.Map(document.getElementById('map'),{
 		zoom: 5,
@@ -33,3 +34,23 @@ function initMap(){
 		alert('Tenemos un problema con encuentrar tu ubicacion');
 	}
 }
+/**/
+const easyBike = {
+
+	mapa: {
+		zoom: undefined,
+		center: undefined
+	},
+
+	iniciarMapa : function() {
+		var mapaInicial = new google.maps.Map(document.getElementById('map'),{
+			zoom: 5,
+			center: { lat: -9.1191427, lng: -77.0349046},
+			mapTypeControl: false,
+			zoomControl: false,
+			streetViewControl:false
+		});
+	},
+
+};
+$(document).ready(easyBike.iniciarMapa);
